@@ -1,0 +1,14 @@
+[Unit]
+Description=Luntik_WG WireGuard Connector
+After=network-online.target nss-lookup.target
+Wants=network-online.target nss-lookup.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/wg-quick up /etc/luntik_wg/wg0.conf
+ExecStop=/usr/bin/wg-quick down /etc/luntik_wg/wg0.conf
+Environment=WG_ENDPOINT_RESOLUTION_RETRIES=infinity
+
+[Install]
+WantedBy=multi-user.target

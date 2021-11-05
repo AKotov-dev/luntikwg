@@ -1,0 +1,82 @@
+[NAME]
+name=luntikwg
+
+[VERSION]
+version=0.1
+
+[RELEASE]
+release=0.mrx8
+
+[GROUP]
+group=Applications/Internet
+
+[DESCRIPTION]
+0=Luntik WireGuard Connector
+1=...
+2=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2020
+
+[SUMMARY]
+summary=Luntik WireGuard Connector
+
+[URLCOPY]
+urlcopy=https://github.com/AKotov-dev/luntikwg
+
+[LICENSE]
+license=GPLv3+
+
+[DEPS]
+deps=systemd polkit iptables wireguard-tools resolvconf procps-ng
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=0
+
+[SIGN]
+sign=0
+
+[DEB]
+deb=0
+
+[FILES]
+0=/usr/bin/luntikwg
+1=/usr/share/luntikwg/
+2=/usr/share/applications/luntikwg.desktop
+3=/usr/share/doc/luntikwg/
+4=/usr/share/polkit-1/actions/luntikwg.policy
+5=/usr/share/icons/luntikwg.png
+6=/etc/luntikwg/restart-wg0
+7=/etc/luntikwg/update-resolv-conf
+8=/etc/systemd/system/luntikwg.service
+9=/etc/sysctl.d/52-luntikwg.conf
+
+[AFTERINSTALL]
+0=systemctl daemon-reload
+
+[AFTERREMOVE]
+0=systemctl daemon-reload
+
+[URL32]
+url32=https://github.com/AKotov-dev/luntikwg
+
+[URL64]
+url64=
+
+[PROGRAMNAME]
+programname=Luntik WireGuard Connector
+
+[DEVTOOL]
+devtool=Lazarus
+
+[TOOLVERSION]
+toolversion=2.0.10
+
+[INFO]
+0=v0.1 - initial release

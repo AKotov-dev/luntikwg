@@ -1,0 +1,145 @@
+object MainForm: TMainForm
+  Left = 323
+  Height = 700
+  Top = 124
+  Width = 940
+  ActiveControl = ReStartBtn
+  Caption = 'Luntik'
+  ClientHeight = 700
+  ClientWidth = 940
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDefault
+  SessionProperties = 'Height;Left;Top;Width;OpenDialog1.InitialDir;FileEdit.Text'
+  LCLVersion = '2.0.10.0'
+  object ReStartBtn: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 845
+    Height = 32
+    Top = 8
+    Width = 90
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 5
+    Caption = 'Restart'
+    OnClick = ReStartBtnClick
+    TabOrder = 3
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 633
+    Top = 50
+    Width = 940
+    Align = alClient
+    BorderSpacing.Top = 50
+    Font.Height = -12
+    Font.Name = 'Sans'
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 4
+  end
+  object StopBtn: TButton
+    AnchorSideRight.Control = ReStartBtn
+    Left = 753
+    Height = 32
+    Top = 8
+    Width = 90
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 2
+    Caption = 'Stop'
+    OnClick = StopBtnClick
+    TabOrder = 2
+  end
+  object AutoStartCheckBox: TCheckBox
+    AnchorSideTop.Control = StopBtn
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = StopBtn
+    Left = 659
+    Height = 32
+    Top = 8
+    Width = 91
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 3
+    Caption = 'AutoStart'
+    OnChange = AutoStartCheckBoxChange
+    TabOrder = 1
+  end
+  object Shape1: TShape
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = FileEdit
+    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Side = asrCenter
+    Left = 5
+    Height = 13
+    Top = 18
+    Width = 13
+    BorderSpacing.Left = 5
+    Brush.Color = clYellow
+    Shape = stCircle
+  end
+  object FileEdit: TEdit
+    AnchorSideLeft.Control = Shape1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = AutoStartCheckBox
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = LoadBtn
+    Left = 23
+    Height = 36
+    Top = 6
+    Width = 589
+    Anchors = [akTop, akLeft, akRight]
+    AutoSelect = False
+    BorderSpacing.Left = 5
+    BorderSpacing.Right = 1
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object LoadBtn: TSpeedButton
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = FileEdit
+    AnchorSideRight.Control = AutoStartCheckBox
+    AnchorSideBottom.Control = FileEdit
+    AnchorSideBottom.Side = asrBottom
+    Left = 613
+    Height = 36
+    Top = 6
+    Width = 38
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Right = 8
+    Caption = '...'
+    OnClick = LoadBtnClick
+  end
+  object StaticText2: TStaticText
+    Left = 0
+    Height = 17
+    Top = 683
+    Width = 940
+    Align = alBottom
+    Caption = 'License: GPLv3   Author: alex_q_2000 (C) 2021   URL: https://linuxforum.ru'
+    Color = clDefault
+    Font.Color = clGray
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    ParentColor = False
+    TabOrder = 5
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 784
+    Top = 65
+  end
+  object XMLPropStorage1: TXMLPropStorage
+    StoredValues = <>
+    Left = 696
+    Top = 65
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'WireGuard configuration (*.conf)|*.conf|.|.'
+    InitialDir = '~/'
+    Left = 592
+    Top = 64
+  end
+end

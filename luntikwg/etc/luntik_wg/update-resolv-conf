@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+case $1 in
+up)
+  #DNS-Leak ON
+  echo "#WireGuard-GUI + OpenDNS..." > /etc/resolv.conf
+  echo "nameserver 1.1.1.1" >> /etc/resolv.conf
+  echo "nameserver 1.0.0.1" >> /etc/resolv.conf
+  ;;
+down)
+  pgrep NetworkManager && systemctl restart NetworkManager.service || resolvconf -u
+  ;;
+esac
+
+exit 0
