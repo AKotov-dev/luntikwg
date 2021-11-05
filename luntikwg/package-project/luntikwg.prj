@@ -2,7 +2,7 @@
 name=luntikwg
 
 [VERSION]
-version=0.1
+version=0.2
 
 [RELEASE]
 release=0.mrx8
@@ -79,4 +79,15 @@ devtool=Lazarus
 toolversion=2.0.10
 
 [INFO]
-0=v0.1 - initial release
+0=LuntikWG is a simplified version of the WireGuard-GUI. Loads any *.conf configuration and adapts it to VPN-Up/Down events to work correctly with VPN/DNS. There is an autostart on reboot.
+1=
+2=The connection is raised immediately after downloading the *.conf file. The connection can be stopped or restarted at any time. VPN indication: yellow - waiting/lost, green - active. Tested and works with network.service/net_applet and NetworkManager/nm-applet in Mageia-8/9.
+3=
+4=Note: Don't forget to open the iptables ports required for configurations.
+5=Similar topic (Luntik - OpenVPN Connector): https://github.com/AKotov-dev/luntik
+6=
+7=v0.2
+8=+ remane project to LuntikWG
+9=+ final edits
+10=
+11=v0.1 - initial release
