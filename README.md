@@ -6,4 +6,4 @@ The connection is raised immediately after downloading the `*.conf` file. The co
 Note: Don't forget to open the iptables ports required for configurations.  
 Similar topic (Luntik - OpenVPN Connector): https://github.com/AKotov-dev/luntik 
 
-![](https://github.com/AKotov-dev/luntik_wg/blob/main/ScreenShot2.png)
+![](https://github.com/AKotov-dev/luntikwg/blob/main/ScreenShot.png)
