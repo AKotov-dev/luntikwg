@@ -1,5 +1,0 @@
-#!/bin/bash
-
-/usr/bin/pkexec /usr/share/luntik_wg/luntik_wg
-
-exit;

@@ -11,7 +11,7 @@ release=0.mrx8
 group=Applications/Internet
 
 [DESCRIPTION]
-0=Luntik WireGuard Connector
+0=LuntikWG - simple WireGuard Connector
 1=...
 2=More information: /usr/share/doc/package_name/repack.txt
 
@@ -22,7 +22,7 @@ maintainer=Alex Kotov
 vendor=alex_q_2000 (C) 2020
 
 [SUMMARY]
-summary=Luntik WireGuard Connector
+summary=LuntikWG - simple WireGuard Connector
 
 [URLCOPY]
 urlcopy=https://github.com/AKotov-dev/luntikwg
@@ -70,7 +70,7 @@ url32=https://github.com/AKotov-dev/luntikwg
 url64=
 
 [PROGRAMNAME]
-programname=Luntik WireGuard Connector
+programname=LuntikWG WireGuard connector
 
 [DEVTOOL]
 devtool=Lazarus
