@@ -106,7 +106,7 @@ end;
 procedure TMainForm.ReStartBtnClick(Sender: TObject);
 begin
   //Перезапуск соединения
-  if FileExists('/etc/luntikwg/wg0.conf') then
+  if FieleExists('/etc/luntikwg/wg0.conf') then
     StartProcess('/etc/luntikwg/restart-wg0');
 end;
 
