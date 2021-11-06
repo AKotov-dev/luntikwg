@@ -15,8 +15,8 @@ sleep 1
 
 #Закрываем DNS Leak в конфиге
 if [[ -z $(cat /etc/luntikwg/wg0.conf | grep PostDown) ]]; then
-    sed -i '/Interface/a \PostUp = /etc/luntikwg/update-resolv-conf up' /etc/luntikwg/wg0.conf
     sed -i '/Interface/a \PostDown = /etc/luntikwg/update-resolv-conf down' /etc/luntikwg/wg0.conf
+    sed -i '/Interface/a \PostUp = /etc/luntikwg/update-resolv-conf up' /etc/luntikwg/wg0.conf
     chmod 600 /etc/luntikwg/wg0.conf
 fi;
 

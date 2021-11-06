@@ -2,7 +2,7 @@
 name=luntikwg
 
 [VERSION]
-version=0.2
+version=0.3
 
 [RELEASE]
 release=0.mrx8
@@ -86,8 +86,11 @@ toolversion=2.0.10
 4=Note: Don't forget to open the iptables ports required for configurations.
 5=Similar topic (Luntik - OpenVPN Connector): https://github.com/AKotov-dev/luntik
 6=
-7=v0.2
-8=+ remane project to LuntikWG
-9=+ final edits
-10=
-11=v0.1 - initial release
+7=v0.3
+8=+ final release
+9=
+10=v0.2
+11=+ remane project to LuntikWG
+12=+ final edits
+13=
+14=v0.1 - initial release

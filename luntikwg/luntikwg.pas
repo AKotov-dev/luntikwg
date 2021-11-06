@@ -14,7 +14,7 @@ uses
 
 begin
   RequireDerivedFormResource:=True;
-  Application.Title:='LuntikWG v0.2';
+  Application.Title:='LuntikWG v0.3';
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TMainForm, MainForm);
