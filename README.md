@@ -8,4 +8,3 @@ Note: Don't forget to open the iptables ports required for configurations. If yo
 Similar topic (Luntik - OpenVPN Connector): https://github.com/AKotov-dev/luntik 
 
 ![](https://github.com/AKotov-dev/luntikwg/blob/main/ScreenShot.png)
-
