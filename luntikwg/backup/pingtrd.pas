@@ -45,7 +45,6 @@ begin
       PingProcess.Parameters.Add(
         // 'ping -c 2 google.com &> /dev/null && [[ $(ip -br a | grep wg[[:digit:]]) ]] && echo "yes" || echo "no"');
         '[[ $(fping google.com) && $(ip -br a | grep wg[[:digit:]]) ]] && echo "yes" || echo "no"');
-
       PingProcess.Options := [poUsePipes, poWaitOnExit];
 
       PingProcess.Execute;

@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 323
+  Left = 292
   Height = 700
-  Top = 124
+  Top = 125
   Width = 940
   ActiveControl = ReStartBtn
   Caption = 'Luntik'
@@ -12,7 +12,7 @@ object MainForm: TMainForm
   OnShow = FormShow
   Position = poDefault
   SessionProperties = 'Height;Left;Top;Width;OpenDialog1.InitialDir;FileEdit.Text'
-  LCLVersion = '2.0.10.0'
+  LCLVersion = '2.2.0.4'
   object ReStartBtn: TButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
@@ -72,9 +72,9 @@ object MainForm: TMainForm
     AnchorSideTop.Side = asrCenter
     AnchorSideBottom.Side = asrCenter
     Left = 5
-    Height = 13
+    Height = 12
     Top = 18
-    Width = 13
+    Width = 12
     BorderSpacing.Left = 5
     Brush.Color = clYellow
     Shape = stCircle
@@ -85,10 +85,10 @@ object MainForm: TMainForm
     AnchorSideTop.Control = AutoStartCheckBox
     AnchorSideTop.Side = asrCenter
     AnchorSideRight.Control = LoadBtn
-    Left = 23
+    Left = 22
     Height = 36
     Top = 6
-    Width = 589
+    Width = 590
     Anchors = [akTop, akLeft, akRight]
     AutoSelect = False
     BorderSpacing.Left = 5

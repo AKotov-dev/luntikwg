@@ -1,0 +1,27 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tmainform.autostartcheckbox.caption
+msgid "AutoStart"
+msgstr ""
+
+#: tmainform.caption
+msgid "Luntik"
+msgstr ""
+
+#: tmainform.loadbtn.caption
+msgid "..."
+msgstr ""
+
+#: tmainform.restartbtn.caption
+msgid "Restart"
+msgstr ""
+
+#: tmainform.statictext2.caption
+msgid "License: GPLv3   Author: alex_q_2000 (C) 2021   URL: https://linuxforum.ru"
+msgstr ""
+
+#: tmainform.stopbtn.caption
+msgid "Stop"
+msgstr ""
+

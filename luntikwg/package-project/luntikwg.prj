@@ -2,10 +2,10 @@
 name=luntikwg
 
 [VERSION]
-version=0.3
+version=0.4
 
 [RELEASE]
-release=0.mrx8
+release=0.mrx9
 
 [GROUP]
 group=Applications/Internet
@@ -31,7 +31,7 @@ urlcopy=https://github.com/AKotov-dev/luntikwg
 license=GPLv3+
 
 [DEPS]
-deps=systemd polkit iptables wireguard-tools resolvconf procps-ng
+deps=systemd polkit iptables wireguard-tools resolvconf procps-ng fping
 
 [META]
 meta=0
@@ -76,7 +76,7 @@ programname=LuntikWG WireGuard connector
 devtool=Lazarus
 
 [TOOLVERSION]
-toolversion=2.0.10
+toolversion=2.2.0
 
 [INFO]
 0=LuntikWG is a simplified version of the WireGuard-GUI. Loads any *.conf configuration and adapts it to VPN-Up/Down events to work correctly with VPN/DNS. There is an autostart on reboot.
@@ -86,11 +86,15 @@ toolversion=2.0.10
 4=Note: Don't forget to open the iptables ports required for configurations.
 5=Similar topic (Luntik - OpenVPN Connector): https://github.com/AKotov-dev/luntik
 6=
-7=v0.3
-8=+ final release
-9=
-10=v0.2
-11=+ remane project to LuntikWG
-12=+ final edits
+7=v0.4
+8=+ using fping to check the connection
+9=+ changing the prefix of rpm-packages to mrx9
+10=
+11=v0.3
+12=+ final release
 13=
-14=v0.1 - initial release
+14=v0.2
+15=+ remane project to LuntikWG
+16=+ final edits
+17=
+18=v0.1 - initial release

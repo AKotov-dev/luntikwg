@@ -12,7 +12,7 @@ object MainForm: TMainForm
   OnShow = FormShow
   Position = poDefault
   SessionProperties = 'Height;Left;Top;Width;OpenDialog1.InitialDir;FileEdit.Text'
-  LCLVersion = '2.0.10.0'
+  LCLVersion = '2.2.0.4'
   object ReStartBtn: TButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom

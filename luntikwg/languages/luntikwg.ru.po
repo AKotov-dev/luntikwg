@@ -35,3 +35,4 @@ msgstr "Лицензия: GPLv3   Автор: alex_q_2000 (C) 2021   URL: https:
 #: tmainform.stopbtn.caption
 msgid "Stop"
 msgstr "Стоп"
+

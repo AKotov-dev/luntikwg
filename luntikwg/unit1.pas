@@ -106,6 +106,9 @@ end;
 procedure TMainForm.ReStartBtnClick(Sender: TObject);
 begin
   //Перезапуск соединения
+  Shape1.Brush.Color := clYellow;
+  Shape1.Repaint;
+
   if FileExists('/etc/luntikwg/wg0.conf') then
     StartProcess('/etc/luntikwg/restart-wg0');
 end;
@@ -150,6 +153,8 @@ end;
 procedure TMainForm.StopBtnClick(Sender: TObject);
 begin
   StartProcess('wg-quick down /etc/luntikwg/wg0.conf');
+  Shape1.Brush.Color := clYellow;
+  Shape1.Repaint;
 end;
 
 procedure TMainForm.FormCreate(Sender: TObject);
