@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 292
+  Left = 314
   Height = 700
-  Top = 125
+  Top = 121
   Width = 940
   ActiveControl = ReStartBtn
   Caption = 'Luntik'

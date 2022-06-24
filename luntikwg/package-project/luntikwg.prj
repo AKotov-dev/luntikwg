@@ -2,7 +2,7 @@
 name=luntikwg
 
 [VERSION]
-version=0.4
+version=0.5
 
 [RELEASE]
 release=0.mrx9
@@ -86,15 +86,19 @@ toolversion=2.2.0
 4=Note: Don't forget to open the iptables ports required for configurations.
 5=Similar topic (Luntik - OpenVPN Connector): https://github.com/AKotov-dev/luntik
 6=
-7=v0.4
-8=+ using fping to check the connection
-9=+ changing the prefix of rpm-packages to mrx9
+7=v0.5
+8=+ Improved DNS leak exclusion mechanism
+9=+ DNS from WgireGuard configuration (wg0.conf)
 10=
-11=v0.3
-12=+ final release
-13=
-14=v0.2
-15=+ remane project to LuntikWG
-16=+ final edits
+11=v0.4
+12=+ using fping to check the connection
+13=+ changing the prefix of rpm-packages to mrx9
+14=
+15=v0.3
+16=+ final release
 17=
-18=v0.1 - initial release
+18=v0.2
+19=+ remane project to LuntikWG
+20=+ final edits
+21=
+22=v0.1 - initial release
