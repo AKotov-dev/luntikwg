@@ -123,7 +123,9 @@ procedure TMainForm.AutoStartCheckBoxChange(Sender: TObject);
 var
   s: ansistring;
 begin
+  Application.ProcessMessages;
   Screen.Cursor := crHourGlass;
+
   if AutoStartCheckBox.Checked then
     RunCommand('/bin/bash', ['-c', 'systemctl enable luntikwg'], s)
   else
@@ -135,6 +137,8 @@ end;
 
 procedure TMainForm.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
+  //Останов, если пытается соединиться...
+  if ProgressBar1.Visible then StopBtn.Click;
   XMLPropStorage1.Save;
 end;
 

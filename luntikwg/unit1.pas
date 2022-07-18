@@ -124,6 +124,8 @@ var
   s: ansistring;
 begin
   Screen.Cursor := crHourGlass;
+  Application.ProcessMessages;
+
   if AutoStartCheckBox.Checked then
     RunCommand('/bin/bash', ['-c', 'systemctl enable luntikwg'], s)
   else
