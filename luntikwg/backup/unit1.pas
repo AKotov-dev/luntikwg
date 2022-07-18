@@ -123,8 +123,8 @@ procedure TMainForm.AutoStartCheckBoxChange(Sender: TObject);
 var
   s: ansistring;
 begin
-  Application.ProcessMessages;
   Screen.Cursor := crHourGlass;
+  Application.ProcessMessages;
 
   if AutoStartCheckBox.Checked then
     RunCommand('/bin/bash', ['-c', 'systemctl enable luntikwg'], s)
