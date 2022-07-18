@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 314
+  Left = 315
   Height = 700
-  Top = 121
+  Top = 123
   Width = 940
   ActiveControl = ReStartBtn
   Caption = 'Luntik'
@@ -13,19 +13,6 @@ object MainForm: TMainForm
   Position = poDefault
   SessionProperties = 'Height;Left;Top;Width;OpenDialog1.InitialDir;FileEdit.Text'
   LCLVersion = '2.2.0.4'
-  object ReStartBtn: TButton
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
-    Left = 845
-    Height = 32
-    Top = 8
-    Width = 90
-    Anchors = [akTop, akRight]
-    BorderSpacing.Right = 5
-    Caption = 'Restart'
-    OnClick = ReStartBtnClick
-    TabOrder = 3
-  end
   object Memo1: TMemo
     Left = 0
     Height = 633
@@ -39,6 +26,19 @@ object MainForm: TMainForm
     ReadOnly = True
     ScrollBars = ssVertical
     TabOrder = 4
+  end
+  object ReStartBtn: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 845
+    Height = 32
+    Top = 8
+    Width = 90
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 5
+    Caption = 'Restart'
+    OnClick = ReStartBtnClick
+    TabOrder = 3
   end
   object StopBtn: TButton
     AnchorSideRight.Control = ReStartBtn
@@ -125,6 +125,23 @@ object MainForm: TMainForm
     ParentFont = False
     ParentColor = False
     TabOrder = 5
+  end
+  object ProgressBar1: TProgressBar
+    AnchorSideLeft.Control = Memo1
+    AnchorSideTop.Control = Memo1
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = Memo1
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = StaticText2
+    Left = 0
+    Height = 11
+    Top = 672
+    Width = 940
+    Anchors = [akLeft, akRight, akBottom]
+    Orientation = pbRightToLeft
+    Smooth = True
+    TabOrder = 6
+    Visible = False
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer

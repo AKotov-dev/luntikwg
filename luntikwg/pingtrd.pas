@@ -5,7 +5,7 @@ unit PingTRD;
 interface
 
 uses
-  Classes, Forms, Controls, SysUtils, Process, StdCtrls, Graphics;
+  Classes, Forms, Controls, SysUtils, Process, Graphics, ComCtrls;
 
 type
   CheckPing = class(TThread)
@@ -74,7 +74,11 @@ procedure CheckPing.ShowStatus;
 begin
   Application.ProcessMessages;
   if Trim(PingStr[0]) = 'yes' then
-    MainForm.Shape1.Brush.Color := clLime
+  begin
+    MainForm.Shape1.Brush.Color := clLime;
+    MainForm.ProgressBar1.Style := pbstNormal;
+    MainForm.ProgressBar1.Visible := False;
+  end
   else
     MainForm.Shape1.Brush.Color := clYellow;
   MainForm.Shape1.Repaint;

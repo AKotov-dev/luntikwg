@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  Process, DefaultTranslator, XMLPropStorage, Buttons, FileUtil;
+  Process, DefaultTranslator, XMLPropStorage, Buttons, ComCtrls, FileUtil;
 
 type
 
@@ -16,6 +16,7 @@ type
     AutoStartCheckBox: TCheckBox;
     FileEdit: TEdit;
     OpenDialog1: TOpenDialog;
+    ProgressBar1: TProgressBar;
     ReStartBtn: TButton;
     Shape1: TShape;
     LoadBtn: TSpeedButton;
@@ -33,7 +34,6 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure StartProcess(command: string);
-
   private
 
   public
@@ -103,16 +103,22 @@ begin
   end;
 end;
 
+//Рестарт
 procedure TMainForm.ReStartBtnClick(Sender: TObject);
 begin
   //Перезапуск соединения
+  StopBtn.Click;
+
   Shape1.Brush.Color := clYellow;
   Shape1.Repaint;
+  ProgressBar1.Style := pbstMarquee;
+  ProgressBar1.Visible := True;
 
   if FileExists('/etc/luntikwg/wg0.conf') then
     StartProcess('/etc/luntikwg/restart-wg0');
 end;
 
+//Автостарт
 procedure TMainForm.AutoStartCheckBoxChange(Sender: TObject);
 var
   s: ansistring;
@@ -146,15 +152,19 @@ begin
   begin
     FileEdit.Text := OpenDialog1.FileName;
     CopyFile(OpenDialog1.FileName, '/etc/luntikwg/wg0.conf', False);
-    StartProcess('/etc/luntikwg/restart-wg0');
+    //StartProcess('/etc/luntikwg/restart-wg0');
+    RestartBtn.Click;
   end;
 end;
 
+//Стоп
 procedure TMainForm.StopBtnClick(Sender: TObject);
 begin
   StartProcess('wg-quick down /etc/luntikwg/wg0.conf');
   Shape1.Brush.Color := clYellow;
   Shape1.Repaint;
+  ProgressBar1.Style := pbstNormal;
+  ProgressBar1.Visible := False;
 end;
 
 procedure TMainForm.FormCreate(Sender: TObject);

@@ -7,14 +7,13 @@ uses
   cthreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, Unit1, PingTRD
-  { you can add units after this };
+  Forms, Unit1, PingTRD;
 
 {$R *.res}
 
 begin
   RequireDerivedFormResource:=True;
-  Application.Title:='LuntikWG v0.5';
+  Application.Title:='LuntikWG v0.6';
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TMainForm, MainForm);
