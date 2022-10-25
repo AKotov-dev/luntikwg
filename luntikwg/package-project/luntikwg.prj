@@ -2,7 +2,7 @@
 name=luntikwg
 
 [VERSION]
-version=0.6
+version=0.7
 
 [RELEASE]
 release=0.mrx9
@@ -86,23 +86,27 @@ toolversion=2.2.0
 4=Note: Don't forget to open the iptables ports required for configurations.
 5=Similar topic (Luntik - OpenVPN Connector): https://github.com/AKotov-dev/luntik
 6=
-7=v0.6
-8=+ Connection indicator
-9=+ Improved the DNS substitution script
+7=v0.7
+8=+ systemd-resolved support
+9=+ Release for Mageia-9 and higher
 10=
-11=v0.5
-12=+ Improved DNS leak exclusion mechanism
-13=+ DNS from WireGuard configuration (wg0.conf)
+11=v0.6
+12=+ Connection indicator
+13=+ Improved the DNS substitution script
 14=
-15=v0.4
-16=+ using fping to check the connection
-17=+ changing the prefix of rpm-packages to mrx9
+15=v0.5
+16=+ Improved DNS leak exclusion mechanism
+17=+ DNS from WireGuard configuration (wg0.conf)
 18=
-19=v0.3
-20=+ final release
-21=
-22=v0.2
-23=+ remane project to LuntikWG
-24=+ final edits
+19=v0.4
+20=+ using fping to check the connection
+21=+ changing the prefix of rpm-packages to mrx9
+22=
+23=v0.3
+24=+ final release
 25=
-26=v0.1 - initial release
+26=v0.2
+27=+ remane project to LuntikWG
+28=+ final edits
+29=
+30=v0.1 - initial release

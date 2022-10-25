@@ -13,7 +13,7 @@ uses
 
 begin
   RequireDerivedFormResource:=True;
-  Application.Title:='LuntikWG v0.6';
+  Application.Title:='LuntikWG v0.7';
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TMainForm, MainForm);

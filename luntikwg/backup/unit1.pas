@@ -106,16 +106,18 @@ end;
 //Рестарт
 procedure TMainForm.ReStartBtnClick(Sender: TObject);
 begin
-  //Перезапуск соединения
-  StopBtn.Click;
-
-  Shape1.Brush.Color := clYellow;
-  Shape1.Repaint;
-  ProgressBar1.Style := pbstMarquee;
-  ProgressBar1.Visible := True;
-
   if FileExists('/etc/luntikwg/wg0.conf') then
+  begin
+    //Перезапуск соединения
+    StopBtn.Click;
+
+    Shape1.Brush.Color := clYellow;
+    Shape1.Repaint;
+    ProgressBar1.Style := pbstMarquee;
+    ProgressBar1.Visible := True;
+
     StartProcess('/etc/luntikwg/restart-wg0');
+  end;
 end;
 
 //Автостарт
