@@ -1,12 +1,12 @@
 object MainForm: TMainForm
   Left = 315
-  Height = 678
+  Height = 620
   Top = 123
-  Width = 915
+  Width = 830
   ActiveControl = ReStartBtn
   Caption = 'Luntik'
-  ClientHeight = 678
-  ClientWidth = 915
+  ClientHeight = 620
+  ClientWidth = 830
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
@@ -15,9 +15,9 @@ object MainForm: TMainForm
   LCLVersion = '2.2.0.4'
   object Memo1: TMemo
     Left = 0
-    Height = 611
+    Height = 553
     Top = 50
-    Width = 915
+    Width = 830
     Align = alClient
     BorderSpacing.Top = 50
     Font.Height = -12
@@ -30,7 +30,7 @@ object MainForm: TMainForm
   object ReStartBtn: TButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 820
+    Left = 735
     Height = 32
     Top = 8
     Width = 90
@@ -42,7 +42,7 @@ object MainForm: TMainForm
   end
   object StopBtn: TButton
     AnchorSideRight.Control = ReStartBtn
-    Left = 728
+    Left = 643
     Height = 32
     Top = 8
     Width = 90
@@ -56,7 +56,7 @@ object MainForm: TMainForm
     AnchorSideTop.Control = StopBtn
     AnchorSideTop.Side = asrCenter
     AnchorSideRight.Control = StopBtn
-    Left = 634
+    Left = 549
     Height = 32
     Top = 8
     Width = 91
@@ -88,7 +88,7 @@ object MainForm: TMainForm
     Left = 22
     Height = 37
     Top = 6
-    Width = 565
+    Width = 480
     Anchors = [akTop, akLeft, akRight]
     AutoSelect = False
     BorderSpacing.Left = 5
@@ -102,7 +102,7 @@ object MainForm: TMainForm
     AnchorSideRight.Control = AutoStartCheckBox
     AnchorSideBottom.Control = FileEdit
     AnchorSideBottom.Side = asrBottom
-    Left = 588
+    Left = 503
     Height = 37
     Top = 6
     Width = 38
@@ -114,8 +114,8 @@ object MainForm: TMainForm
   object StaticText2: TStaticText
     Left = 0
     Height = 17
-    Top = 661
-    Width = 915
+    Top = 603
+    Width = 830
     Align = alBottom
     Caption = 'License: GPLv3   Author: alex_q_2000 (C) 2021   URL: https://linuxforum.ru'
     Color = clDefault
@@ -135,8 +135,8 @@ object MainForm: TMainForm
     AnchorSideBottom.Control = StaticText2
     Left = 0
     Height = 10
-    Top = 651
-    Width = 915
+    Top = 593
+    Width = 830
     Anchors = [akLeft, akRight, akBottom]
     Orientation = pbRightToLeft
     Smooth = True
@@ -145,18 +145,18 @@ object MainForm: TMainForm
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    Left = 784
+    Left = 768
     Top = 65
   end
   object XMLPropStorage1: TXMLPropStorage
     StoredValues = <>
-    Left = 696
+    Left = 680
     Top = 65
   end
   object OpenDialog1: TOpenDialog
     Filter = 'WireGuard configuration (*.conf)|*.conf|.|.'
     InitialDir = '~/'
-    Left = 592
+    Left = 576
     Top = 64
   end
 end

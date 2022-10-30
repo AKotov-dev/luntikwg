@@ -134,8 +134,8 @@ object MainForm: TMainForm
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = StaticText2
     Left = 0
-    Height = 11
-    Top = 650
+    Height = 10
+    Top = 651
     Width = 915
     Anchors = [akLeft, akRight, akBottom]
     Orientation = pbRightToLeft
